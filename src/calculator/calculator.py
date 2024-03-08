@@ -20,9 +20,7 @@ def magicSquares(n):
     """Calculates the magic squares number"""
     return (n * (n**2 + 1)) / 2
 
-""" ADD ANOTHER 3 FUNCTIONS """
 
-# ignore this function now
 def run_calculator(input_formula, input_num):
     """Calls and returns results for the specified formulas"""
     calculator = [squareNums, triNums, lazyCaterer, magicSquares]
