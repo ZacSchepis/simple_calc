@@ -28,6 +28,17 @@ def run_calculator(input_formula, input_num):
     return_result = formula(input_num)
     return return_result
 
+def hypotoneuse(a, b):
+    """Calculates the hypotoneuse of a right triangle"""
+    return (a**2 + b**2)**0.5
+
+def percent_of(n, percent):
+    if percent > 1:
+        percent = percent / 100
+    return n * percent
+
+def x_to_the_n(x, n):
+    return x**n
 
 if __name__ == "__main__":
     print(
