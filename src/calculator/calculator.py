@@ -33,11 +33,13 @@ def hypotoneuse(a, b):
     return (a**2 + b**2)**0.5
 
 def percent_of(n, percent):
+    """Calculates the percentage of a number"""
     if percent > 1:
         percent = percent / 100
     return n * percent
 
 def x_to_the_n(x, n):
+    """Calculates x to the nth power"""
     return x**n
 
 if __name__ == "__main__":
