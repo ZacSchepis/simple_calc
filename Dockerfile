@@ -15,10 +15,9 @@ ENV POETRY_VIRTUALENVS_CREATE=false
 ENV POETRY=/root/.local/bin/poetry
 WORKDIR /app
 RUN git clone $PROJECT_URL
-WORKDIR /app/
+WORKDIR /app/simple_calc
 RUN git checkout docker
 
 RUN poetry install
-EXPOSE 5000
 ENTRYPOINT ["poetry"]
-CMD ["run pytest"]
+CMD ["run", "pytest"]
