@@ -2,7 +2,7 @@ FROM python:3.11.9-slim-bullseye
 
 ARG POETRY_VERSION=1.8.2
 ARG POETRY_DOWNLOAD=https://install.python-poetry.org
-ARG PROJECT_URL=https://github.com/ZacSchepis/simple_calc
+ARG PROJECT_URL=https://github.com/ZacSchepis/simple_calc.git
 ENV PATH="$PATH:/root/.local/bin"
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --no-install-suggests -y \
